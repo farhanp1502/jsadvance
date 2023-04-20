@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ 
+  <script>
+    // use of symbol we have to convert to string if we are using it as a string
+    let a=Symbol("hello");
+    let b=Symbol("hello");
+    console.log(a)
+    console.log(a.description)// to access the value
+    alert(a.toString())
+document.write(a==b)
+
+let user={
+name:"farhan",
+age:21,
+}
+let city= Symbol()
+user[city]="delhi"
+console.log(user)
+console.log(JSON.stringify(user))
+
+  </script> 
+</body>
+</html>

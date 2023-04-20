@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class parent {
+        constructor() {
+          this.a = {
+            name: "farhan",
+            age: 21,
+            city: "bangalore",
+          };
+        }
+      }
+      class first extends parent {
+        info() {
+          document.write(
+            `my name is ${this.a.name} with the age of ${this.a.age} living in ${this.a.city}`
+          );
+        }
+      }
+      let x = new first();
+      x.info();
+    </script>
+  </body>
+</html>

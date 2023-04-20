@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      class student {
+        
+        // constructor class we can use without using creating ojects
+
+        constructor() {
+         this.a = "hello";
+         this.b = "world";
+        
+          document.write(`${this.a} ${this.b}<br>`);
+         
+        }
+
+        // prototype class need a object to call
+        message() {
+          document.write("farhan pasha");
+          document.write(`${this.a} ${this.b}<br>`);
+        }
+
+        //static class can be called with only class name itself
+        static msg(){
+        
+          document.write("hello world")
+         
+        }
+      }
+      let ab = new student();
+      ab.message();
+      student.msg();
+
+    </script>
+  </body>
+</html>

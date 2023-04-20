@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      async function abc() {
+        console.log("hello");
+        console.log("4hello");
+        console.log("5hello");
+        await fetch("./read.txt")
+          .then((r) => r.text())
+          .then((a) => console.log(a));
+        console.log("6hello");
+      }
+      console.log("1hello");
+      abc();
+      console.log("2hello");
+    </script>
+  </body>
+</html>

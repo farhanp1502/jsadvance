@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script> 
+  //  <!-- difference bw var let const -->
+
+
+// it can use in global scope
+    var  a="hello"; 
+    document.write(a);
+    var a="world";//we cane redeclare the value 
+    document.write(a);
+a="wow";// we can reassigne the value too
+document.write(a);
+
+
+// it can be use in block scope 
+let x = "hello";
+document.write(x);
+//let x="world";  // we cannot redeclare the let 
+document.write(x);
+x="wow";        // we can assign the let
+document.write(x);
+
+
+// it can be use in block scope 
+const z="hello";
+document.write(z);// we cannot assign or redeclare
+    </script>
+
+
+</body>
+</html>
